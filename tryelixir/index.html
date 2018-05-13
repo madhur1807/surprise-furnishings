@@ -42,6 +42,27 @@
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
+    <style type="text/css">
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        .middle_text {
+            color: black;
+            font-size: 23px;
+        }
+        .hover_effect:hover .middle{
+            opacity: 1;
+        }
+        .hover_effect:hover img{
+            opacity: 0.3;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".inner-link" data-offset="60">
@@ -200,12 +221,36 @@
                 <p class="px-lg-4 mt-3 text-center">COLLECTIONS FOREVER</p>
                 <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                 <div class="owl-carousel owl-theme" data-options='{"nav":true,"dots":true,"loop":true,"autoplay":true,"autoplayHoverPause":true,"items":3, "margin":20}'>
-					<div class="item"><img src="assets/images/owl-1.jpg" class="radius-primary"/></div>
-					<div class="item"><img src="assets/images/owl-2.jpg" class="radius-primary"/></div>
-					<div class="item"><img src="assets/images/owl-3.jpg" class="radius-primary"/></div>
-					<div class="item"><img src="assets/images/owl-4.jpg" class="radius-primary"/></div>
-					<div class="item"><img src="assets/images/owl-5.jpg" class="radius-primary"/></div>
-					<div class="item"><img src="assets/images/owl-6.jpg" class="radius-primary"/></div>
+					<div class="item hover_effect"><img src="assets/images/owl-1.jpg" class="radius-primary"/>
+                        <div class="middle">
+                            <div class="middle_text">Upholstery</div>
+                        </div>
+                    </div>
+					<div class="item hover_effect"><img src="assets/images/owl-2.jpg" class="radius-primary"/>
+                        <div class="middle">
+                            <div class="middle_text">Carpets</div>
+                        </div>
+                    </div>
+					<div class="item hover_effect"><img src="assets/images/owl-3.jpg" class="radius-primary"/>
+                        <div class="middle">
+                            <div class="middle_text">Sofa Covers</div>
+                        </div>
+                    </div>
+					<div class="item hover_effect"><img src="assets/images/owl-4.jpg" class="radius-primary"/>
+                        <div class="middle">
+                            <div class="middle_text">Drapes</div>
+                        </div>
+                    </div>
+					<div class="item hover_effect"><img src="assets/images/owl-5.jpg" class="radius-primary"/>
+                        <div class="middle">
+                            <div class="middle_text">Bed Sheets</div>
+                        </div>
+                    </div>
+					<div class="item hover_effect"><img src="assets/images/owl-6.jpg" class="radius-primary"/>
+                        <div class="middle">
+                            <div class="middle_text">Cushions</div>
+                        </div>
+                    </div>
 				</div>
 					
                 <!--/.row-->
